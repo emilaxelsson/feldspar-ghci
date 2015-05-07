@@ -19,6 +19,9 @@
 -- Convenience:
 :set -XNoMonomorphismRestriction
 
+-- Feldspar uses some nasty types:
+:set -fcontext-stack=100
+
 -- Include sub-directories of current package:
 :set -isrc -iexamples -itests -ibenchmarks
 
