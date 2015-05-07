@@ -1,6 +1,6 @@
 # Introduction
 
-This package provides a scripts for loading Feldspar-related packages in GHCi. One motivation is that using GHCi (or `ghccheck`; see below) is usually much faster than using Cabal, especially when making changes across several packages simultaneously. Another motivation is to give a common definition of all "innocent" extensions used in Feldspar-related packages avoiding the need for long list of pragmas at the beginning of each Haskell file. Less innocent extensions, such as the following, are not included in the script and have to be turned using pragmas where needed:
+This package provides scripts for loading Feldspar-related packages in GHCi. One motivation is that using GHCi (or `ghccheck`; see below) is usually much faster than using Cabal, especially when making changes across several packages simultaneously. Another motivation is to give a common definition of all "innocent" extensions used in Feldspar-related packages avoiding the need for long list of pragmas at the beginning of each Haskell file. Less innocent extensions, such as the following, are not included in the script and have to be turned using pragmas where needed:
 
     CPP
     OverlappingInstances
