@@ -1,0 +1,40 @@
+-- Default extensions:
+:set -XConstraintKinds
+:set -XDefaultSignatures
+:set -XDeriveDataTypeable
+:set -XDeriveFoldable
+:set -XDeriveFunctor
+:set -XDeriveTraversable
+:set -XFlexibleContexts
+:set -XFlexibleInstances
+:set -XFunctionalDependencies
+:set -XGADTs
+:set -XGeneralizedNewtypeDeriving
+:set -XRank2Types
+:set -XScopedTypeVariables
+:set -XStandaloneDeriving
+:set -XTypeFamilies
+:set -XTypeOperators
+
+-- Convenience:
+:set -XNoMonomorphismRestriction
+
+-- Feldspar uses some nasty types:
+:set -fcontext-stack=100
+
+-- Include related packages in path:
+:set -i../feldspar-language/src
+:set -i../feldspar-compiler/lib
+:set -i../imperative-edsl/src
+:set -i../feldspar-compiler-shim/src
+:set -i../feldspar-io/src
+
+-- Include sub-directories of current package:
+:set -isrc -iexamples -itests -ibenchmarks
+
+-- Good to have:
+:set -fwarn-unused-imports
+:set -fwarn-unused-binds
+
+-- Most people have two cores:
+:set -j2
