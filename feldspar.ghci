@@ -29,6 +29,3 @@
 -- Good to have:
 :set -fwarn-unused-imports
 :set -fwarn-unused-binds
-
--- Most people have at least two cores:
-:set -j2
