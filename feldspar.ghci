@@ -23,6 +23,7 @@
 :set -fcontext-stack=100
 
 -- Include related packages in path:
+:set -i../syntactic/src
 :set -i../feldspar-language/src
 :set -i../feldspar-compiler/lib
 :set -i../imperative-edsl/src
@@ -36,5 +37,5 @@
 :set -fwarn-unused-imports
 :set -fwarn-unused-binds
 
--- Most people have two cores:
+-- Most people have at least two cores:
 :set -j2
