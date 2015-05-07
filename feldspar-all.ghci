@@ -19,12 +19,19 @@
 -- Convenience:
 :set -XNoMonomorphismRestriction
 
+-- Feldspar uses some nasty types:
+:set -fcontext-stack=100
+
+-- Include related packages in path:
+:set -i../syntactic/src
+:set -i../feldspar-language/src
+:set -i../feldspar-compiler/lib
+:set -i../imperative-edsl/src
+:set -i../feldspar-compiler-shim/src
+:set -i../feldspar-io/src
+
 -- Include sub-directories of current package:
 :set -isrc -iexamples -itests -ibenchmarks
-
--- feldspar-compiler has its source code under lib/. Including it should be
--- harmless for most other packages.
-:set -ilib
 
 -- Good to have:
 :set -fwarn-unused-imports
