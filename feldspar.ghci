@@ -11,6 +11,7 @@
 :set -XGADTs
 :set -XGeneralizedNewtypeDeriving
 :set -XRank2Types
+:set -XRecordWildCards
 :set -XScopedTypeVariables
 :set -XStandaloneDeriving
 :set -XTypeFamilies
